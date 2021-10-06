@@ -1,0 +1,255 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* top area styles */
+.top-area{
+    width: 1440px;
+    height: 677px;
+    background-color:#2D25A0 ;
+}
+.copa-america{
+    display: flex;
+    justify-content: center;
+}
+.copa-america .info{
+    margin: 110px 60px 0px 0px;
+}
+.copa-america .info h1{
+    color: white;
+    font-size: 54px;
+    width: 445px;
+    height: 230px;
+    transition: .5s;
+}
+.copa-america .info:hover .button{
+    background-color: rgb(228, 0, 76);
+     transform: scaleX(-1) scaleY(-1) rotate(180deg);
+     transition: 2s;
+}
+.copa-america .info h1:hover{
+    color: #a1e600;
+    font-size: 60px;
+}
+.button{
+    width: 168px;
+    height: 44px;
+    border: none;
+    background-color: #E02C6D;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    
+}
+.my-arrow{
+    padding-left: 10px;
+}
+.copa-america .thumbnail img{
+    width: 556px;
+    height: 438px;
+    margin: 110px 0px 0px 0px;
+    transition: width 5s, height 2s, transform 2s;
+}
+.copa-america .thumbnail img:hover{
+    width: 756px;
+    height: 638px;
+    transform: rotate(90deg);
+   
+}
+
+/* mid area styles */
+.mid-area{
+    width: 1440px;
+    display: grid;
+    justify-items: center;
+    margin-top: 70px;
+}
+.players-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 30px;
+    
+    flex-wrap: wrap;
+}
+.player{
+    width: 360px;
+    box-shadow: 3px 0px 20px 8px rgba(195, 195, 195, 0.719);
+    overflow: hidden;
+}
+.player .player-thumbnail img{
+    width: 330px;
+    padding: 15px;
+    transition: .5s;
+}
+.player .player-thumbnail img:hover{
+    transform: scale(1.2);
+}
+.player .player-info{
+    padding: 0px 15px 15px 15px;
+}
+.player .player-name{
+    font-size: 28px;
+    margin: 0px;
+}
+.player .description{
+    color: rgb(112, 107, 107);
+    margin-top: 12px;
+}
+
+
+
+/* new players section's style */
+
+.new-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 190px;
+}
+.new-section>.top-area{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 1640px;
+}
+.new-section>.top-area>.info{
+    width: 466px;
+    height: 310px;
+    margin: 40px 0px 0px 100px;
+}
+.new-section>.top-area>.info> h3{
+    font-size: 35px;
+}
+.new-section>.top-area>.thumbnail img{
+    width: 570px;
+    height: 430px;
+    margin: 10px;
+    margin-left: 210px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 2s;
+}
+.new-section>.top-area>.thumbnail img:hover{
+    transform: scaleX(-1);
+}
+
+.common{
+    width: 450px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaaaa;
+    overflow: hidden;
+}
+.common img{
+    width: 450px;
+    height: 300px;
+    transition: 1s;
+}
+.common img:hover{
+    transform: scale(1.2);
+}
+.left{
+    float: left;
+    transform: rotate(7deg);
+}
+.right{
+    float: left;
+    transform: rotate(-8deg);
+}
+
+
+
+/* footer styles */
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 50px 0px;
+}
+.footer-container{
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+.footer-container>.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.items>.icons{
+    display: flex;
+    justify-content: center;
+}
+.items>.icons i{
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 7px;
+    color: #848b9e;
+    background-color: #e0e0e0;
+    transition: .1s;
+}
+.items>.icons i:hover{
+    color: slateblue;
+    font-size: 25px;
+}
+.items>.icons a{
+    text-decoration:none;
+}
+.footer-container>.items>.logo img{
+    width: 400px;
+}
+.bottom{
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* for responsiveness */
+@media only screen and (max-width:688px) {
+    .top-area{
+        background-color: rgb(155, 77, 200);
+        width: 528px;
+    }
+    .copa-america{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        width: 300px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .info h1{
+        font-size: 5px;
+        background-color: red;
+    }
+    .thumbnail{
+        width: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .new-section, .mid-area, footer, .thumbnail, .info, .copa-america, .top-area, main, header, body{
+        display: none;
+    }
+}
