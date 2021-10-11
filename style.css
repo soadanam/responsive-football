@@ -79,8 +79,6 @@ main{
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     grid-gap: 30px;
-    
-    flex-wrap: wrap;
 }
 .player{
     width: 360px;
@@ -89,6 +87,7 @@ main{
 }
 .player .player-thumbnail img{
     width: 330px;
+    width: 100%;
     padding: 15px;
     transition: .5s;
 }
@@ -221,35 +220,29 @@ footer{
 
 
 
+/* for slight responsive by media query */
 
-
-
-/* for responsiveness */
-@media only screen and (max-width:688px) {
-    .top-area{
-        background-color: rgb(155, 77, 200);
-        width: 528px;
+@media (max-width: 688px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .copa-america{
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .mid-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:blue;
+    }
+    main .mid-area>.players-container{
+        background-color: aqua;
         display: flex;
         flex-direction: column;
-    }
-    .info{
-        width: 300px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .info h1{
-        font-size: 5px;
-        background-color: red;
-    }
-    .thumbnail{
-        width: 100%;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .new-section, .mid-area, footer, .thumbnail, .info, .copa-america, .top-area, main, header, body{
-        display: none;
+        justify-items: center;
     }
 }
